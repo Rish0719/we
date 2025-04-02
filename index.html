@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sansi Bhantu Samaj Vikas Sanstha</title>
+  <p> Regitration Number : F26114A</p>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    header {
+      background-image: url('background.jpeg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header><div class="header-content">
+    <img src="logo.jpeg" alt="Sansi Bhāntu Logo" class="logo" />
+    <h1 data-en="Sansi Or Bhāntu Samaj Vikas Sanghatna" data-hi="सांसी भाँतु समाज विकास संस्था">Sansi Bhāntu Samaj Vikas Sanstha</h1>
+    <p class="tagline" data-en="Empowering the Community" data-hi="सांसी और भाँतु समुदाय को सशक्त बनाना">Empowering the Community</p>
+    <div class="lang-toggle">
+      <button onclick="setLanguage('en')">English</button>
+      <button onclick="setLanguage('hi')">हिन्दी</button>
+    </div>
+  </div></header>
+
+  <nav>
+    <a href="#about" data-en="About" data-hi="परिचय">About</a>
+    <a href="work.html" data-en="Our Work" data-hi="हमारा कार्य">Our Work</a>
+    <a href="#donate" data-en="Your Contribution" data-hi="आपका योगदान">Your Contribution</a>
+    <a href="#contact" data-en="Contact" data-hi="संपर्क करें">Contact</a>
+    <a href="#form" data-en="Raise a Concern" data-hi="समस्या दर्ज करें">Raise a Concern</a>
+  </nav>
+
+  <section id="about">
+    <h2 data-en="About Us" data-hi="हमारे बारे में">About Us</h2>
+    <p data-en="We are a community-driven NGO supporting the Sansi and Bhāntu people in areas like marriage aid, healthcare, and welfare." 
+       data-hi="हम एक समुदाय आधारित NGO हैं जो विवाह सहायता, स्वास्थ्य सेवा और कल्याण में सांसी और भाँतु लोगों का समर्थन करता है।">
+      We are a community-driven NGO supporting the Sansi and Bhāntu people in areas like marriage aid, healthcare, and welfare.
+    </p>
+     
+  </section>
+
+ <section id="our-message" class="fade-in">
+  <h2 onclick="toggleMessage()" style="cursor: pointer;">
+    <span data-en="Our Message" data-hi="हमारा संदेश">Our Message</span>
+    <span id="arrow">&#9660;</span>
+  </h2>
+
+  <div id="message-box" style="display: none; background: linear-gradient(to bottom right, #e3f2fd, #fff3e0); padding: 1.5rem; border-radius: 10px; animation: floatIn 1s ease-in-out;">
+    <div id="founder-text"
+         data-en='<p>Dear members of the Sansi and Bhāntu community, including youth, elders, and women,</p>
+         <p>Through this NGO, we have traveled across various Indian states to understand the condition of our people. Today, it is time for our community to unite.</p>
+         <p>After joining this NGO, you can register as a member and contribute starting from ₹101 or more as you wish. Share the issues affecting you and your village so we can bring them to the attention of officials and work quickly toward solutions.</p>
+         <p>Across India, our community lives in different states, but now is the time to show our collective strength so that state and central governments truly hear us. It is essential to join this NGO in large numbers.</p>
+         <p>We have built a beautiful community wedding hall in Dondaicha, Maharashtra, where our people can host weddings free of charge. We plan to build more such halls, hospitals, scholarships for students, and essential services. Your support and participation are key.</p>
+         <p>This website helps us unite. We humbly invite you to become a part of this NGO, be a member of the Bhāntu Samaj, and support the cause.</p>
+         <p><strong>Jai Hind, Jai Bharat, Jai Bhāntu Samaj</strong></p>'
+         
+         data-hi='<p>प्रिय सांसी भाँतु समाज के सभी छोटे-बड़े, बाल, गोपाल एवं महिलाएं,</p>
+         <p>आप सभी से निवेदन है कि सांसी भाँतु समाज के इस NGO के माध्यम से हमने देश के विभिन्न राज्यों में जाकर समाज की परिस्थितियों को समझा है। आज समाज को एकजुट होने की आवश्यकता है।</p>
+         <p>इस NGO से जुड़ने के बाद आप अपनी सदस्यता लें और अपनी इच्छा अनुसार 101 रुपये से लेकर जितना भी सामाजिक तौर पर दान (डोनेशन) देना चाहें, दे सकते हैं। आपकी और आपके गाँव की जो भी समस्याएं हैं, वे आप इस NGO को बताएं ताकि हम NGO के माध्यम से संबंधित क्षेत्र के अधिकारियों तक आपकी समस्याएं पहुँचा सकें और समाधान हेतु तत्परता से कार्य कर सकें।</p>
+         <p>भारत देश में हमारा समाज विभिन्न राज्यों में अपने-अपने स्तर पर जीवन व्यतीत कर रहा है। लेकिन आज वह समय आ गया है जब हमें एकजुट होकर अपनी ताकत दिखानी होगी, ताकि राज्य एवं केंद्र सरकार तक हमारी समस्याएं प्रभावी रूप से पहुँच सकें। इसके लिए अधिक से अधिक संख्या में इस NGO से जुड़ना अत्यंत आवश्यक है।</p>
+         <p>हमने महाराष्ट्र के दोंडाचा में एक भव्य मंगल कार्यालय बनवाया है, जहाँ हमारे समाज के लोग बिना कोई शुल्क दिए विवाह जैसे शुभ कार्य सम्पन्न कर सकते हैं। इसी प्रकार हम आगे भी समाज को मंगल कार्यालय, चिकित्सालय, बच्चों के लिए छात्रवृत्ति (स्कॉलरशिप) और अन्य ज़रूरी सुविधाएं उपलब्ध कराने हेतु कार्य करना चाहते हैं। इन सभी सामाजिक सेवाओं में हम आपके सहयोग और भागीदारी के इच्छुक हैं।</p>
+         <p>इस वेबसाइट के माध्यम से हम एकजुट हो सकते हैं। आप सभी से विनम्र निवेदन है कि इस वेबसाइट के ज़रिए इस NGO से जुड़ें, भाँतु समाज के सदस्य बनें और अपना सहयोग प्रदान करें।</p>
+         <p><strong>जय हिंद, जय भारत, जय भाँतु समाज</strong></p>'>
+    </div>
+  </div>
+
+<section id="donate" style="border: 3px solid #ff9800; padding: 2rem; background-color: #fff8e1;">
+  <h2 data-en="Your Contribution" data-hi="आपका योगदान">Your Contribution</h2>
+  <p data-en="Support us in our mission. Every contribution makes a difference."
+     data-hi="हमारे मिशन में योगदान करें। आपका हर योगदान महत्वपूर्ण है।">
+    Support us in our mission. Every contribution makes a difference.
+  </p>
+  <button class="donate-btn" data-en="Contribute Now" data-hi="योगदान दें">Contribute Now</button>
+</section>
+
+<section id="register">
+  <h2 data-en="Join the Community" data-hi="सामुदायिक सदस्य बनें">Join the Community</h2>
+  <form id="register-form">
+    <label data-en="Full Name" data-hi="पूरा नाम">Full Name</label>
+    <input type="text" name="user_name" required />
+    <label data-en="Phone Number" data-hi="फ़ोन नंबर">Phone Number</label>
+    <input type="text" name="user_phone" required />
+    <label data-en="Email Address" data-hi="ईमेल पता">Email Address</label>
+    <input type="email" name="user_email" required />
+    <button type="submit" data-en="Sign Up" data-hi="साइन अप करें">Sign Up</button>
+  </form>
+</section>
+
+<section id="team">
+  <h2 data-en="Our Team" data-hi="हमारी टीम">Our Team</h2>
+  <div class="founder-box">
+    <img src="founder.jpg" alt="Founder" class="founder-img" />
+    <p data-en="Founder: Mr. Darshansing Malke" data-hi="संस्थापक: श्री दर्शनसिंग मलके">Founder: Mr. Darshansing Malke</p>
+  </div>
+  <div class="founder-box">
+    <img src="team2.jpg" alt="Tech Manager" class="founder-img" />
+    <p data-en="Technology Manager: Ms. Neha Bhonsle" data-hi="प्रौद्योगिकी प्रबंधक: सुश्री नेहा भोंसले">Technology Manager: Ms. Neha Bhonsle</p>
+  </div>
+  <div class="founder-box">
+    <img src="team3.jpg" alt="Secretary" class="founder-img" />
+    <p data-en="Secretary: Mr. Ramesh Patil" data-hi="सचिव: श्री रमेश पाटिल">Secretary: Mr. Ramesh Patil</p>
+  </div>
+</section>
+
+    <h2 data-en="Your Contribution" data-hi="आपका योगदान">Your Contribution</h2>
+    <p data-en="Support us in our mission. Every contribution makes a difference." 
+       data-hi="हमारे मिशन में योगदान करें। आपका हर योगदान महत्वपूर्ण है।">
+      Support us in our mission. Every contribution makes a difference.
+    </p>
+    <button class="donate-btn" data-en="Contribute Now" data-hi="योगदान दें">Contribute Now</button>
+  </section>
+
+<section id="form">
+    <h2 data-en="Raise a Concern" data-hi="अपनी समस्या बताएं">Raise a Concern</h2>
+    <form id="concern-form">
+      <label data-en="Your Name" data-hi="आपका नाम">Your Name</label>
+      <input type="text" name="name" required />
+
+      <label data-en="Contact Number" data-hi="संपर्क नंबर">Contact Number</label>
+      <input type="text" name="contact" required />
+
+      <label data-en="Write Your Problem" data-hi="अपनी समस्या लिखें">Write Your Problem</label>
+      <textarea name="problem" required></textarea>
+
+      <label data-en="Your Expectation from NGO" data-hi="NGO से आपकी अपेक्षा">Your Expectation from NGO</label>
+      <textarea name="expectation" required></textarea>
+
+      <button type="submit" data-en="Submit" data-hi="जमा करें">Submit</button>
+    </form>
+  </section>
+
+   <section id="contact">
+    <h2 data-en="Contact Us" data-hi="संपर्क करें">Contact Us</h2>
+    <p>Email: support@sansisamaj.com</p>
+    <p>Phone: +91-7249666000</p>
+    <a href="tel:+917249666000" class="call-button" data-en="Call Us" data-hi="हमें कॉल करें">Call Us</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sansi Bhantu Samaj Vikas Sanstha</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
